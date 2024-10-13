@@ -26,15 +26,22 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 """,
 ]
 
-for i, file in enumerate(files):
+errors = []
+
+for file in files:
+    fp = ROOT_FOLDER / file
     try:
-        fp = ROOT_FOLDER / file
-        assert fp.exists()
+        assert fp.exists(), f"{file} tiedosto puuttuu"
     except AssertionError:
-        print(f"{file} tiedosto puuttuu")
+        errors.append(f"{file} tiedosto puuttuu")
 for i, file in enumerate(files):
     fp = ROOT_FOLDER / file
-    teksti = fp.read_text(encoding="utf-8")
-    assert teksti == contents[i], f"{file} väärä sisältö:\n{teksti}\nvs\n{contents[i]}"
-
-print("Kaikki testit läpäisty")
+    if fp.exists():
+        try:
+            teksti = fp.read_text(encoding="utf-8")
+            assert teksti == contents[i]
+        except AssertionError:
+            errors.append(f"{file} väärä sisältö:\nOdotettu:\n{repr(contents[i])}\nLuettu:\n{repr(teksti)}")
+print(f"Testit suoritettu: {len(errors)} Virhettä")
+for e in errors:
+    print("------\n"+e)
