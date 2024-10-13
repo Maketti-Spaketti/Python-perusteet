@@ -54,5 +54,7 @@ for func in testit:
     tulokset.append(tulos)
     os.system("cls" if os.name == "nt" else "clear")
 print(
-    "\n".join(f"{testit[x].__name__}: {tulokset[x]}" for x in range(0, len(tulokset)))
+    "\n".join(
+        f"{testit[x].__name__}: {tulokset[x]}" for x in range(0, len(tulokset))
+    )
 )
