@@ -26,7 +26,7 @@ Seuraavaksi luetaan {seuraavaSijainti}_{salattuSalasana}.gkg tiedosto:
 Sen ensimmäinen rivi lisätään player_progress.txt tiedostoon loppuun avaamalle se "a"(append) tilassa.  
 Tämä luettu rivi sisältää `1;2;XXXXXXX` missä X on salattu salasana.
 
-Lopun tekstin salaus puretaan ja tallennetaan `{seuraavaSijainti}-{salaamatonSalasana}.txt` tiedostoon, tiedoston loppuun lisätään tyhjä rivi.
+Lopun tekstin salaus puretaan ja tallennetaan `{seuraavaSijainti}-{salaamatonSalasana}.txt` tiedostoon.
 * seuraavaSijainti ei ole muuttunut, eli ekassa ajossa on 1
 * salaamatonSalasana on myöskin sama mitä huudeltiin aikaisemmin vartijoille, mutta ilman niitä ylimääräisiä muotoiluja
 * Erota sijainti ja salasana tämän tiedoston nimessä väliviivalla
