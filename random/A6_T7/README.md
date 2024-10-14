@@ -7,13 +7,15 @@ player_progress.txt formaatti:
 	...
 	jne
 ```
-Alussa luodaan tiedosto jossa on vain 2 ensimmäistä riviä, mutta loput lisätään seuraavien ajojen aikana.  
+Omassa ympäristössä luodaan alussa tiedosto jossa on vain 2 ensimmäistä riviä, mutta loput lisätään seuraavien ajojen aikana.  
 Jos haluat tarkistaa onko tiedosto jo olemassa voit käyttää  
 ```.py
 import os
 if not os.path.exists("player_progress.txt"):
 	#Luo tiedosto
 ```
+Testiympäristössä tiedosto on jo valmiiksi luotu, joten voit ohittaa edellisen vaiheen.
+
 
 Ensimmäisenä luetaan viimeinen (ei tyhjä) rivi player_progress.txt tiedostosta  
 Ja jaetaan se nykyinenSijainti, seuraavaSijainti, ja salattuSalasana muuttujiin  
