@@ -24,7 +24,7 @@ SalattuSalasana muuttujasta tehdään myös SalaamatonSalasana muuttuja dekrypta
 SalaamatonSalasana:sta pitää vielä tehdä muokattu versio vartijoille:  
 Lisäämällä siihen; iso alkukirjain (`.capitalize()`), lainausmerkit, ja huutomerkki.  
 
-Seuraavaksi luetaan {SeuraavaSijainti}_{SalattuSalasana}.gkg tiedosto:  
+Seuraavaksi luetaan `{SeuraavaSijainti}_{SalattuSalasana}.gkg` tiedosto:  
 Sen ensimmäinen rivi lisätään `player_progress.txt` tiedostoon loppuun avaamalle se "a"(append) tilassa.  
 Tämä luettu rivi on muotoa `1;2;XXXXXXX`, jotka ovat seuraavalla ajokerralla käytettäviä arvoja.  
 
