@@ -4,7 +4,7 @@ player_progress.txt formaatti:
 	0;1;qvfpvcyvar
 	1_{SalattuSalasana}.gkg tiedoston ensimmäinen rivi, sisältää 1;2;SalattuSalasana
 	2_{SalattuSalasana}.gkg tiedoston ensimmäinen rivi, sisältää 2;3;SalattuSalasana
-	...
+	jne.
 	lopussa tyhjä rivi
 ```
 Omassa ympäristössä täytyy aluksi luodate tiedosto joka sisältää `player_progress.txt`:in kaksi ensimmäistä riviä + 1 tyhjä rivi.  
