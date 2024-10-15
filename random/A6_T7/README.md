@@ -5,9 +5,9 @@ player_progress.txt formaatti:
 	1_{salattuSalasana}.gkg tiedoston ensimmäinen rivi, sisältää 1;2;salattuSalana
 	2_{salattuSalasana}.gkg tiedoston ensimmäinen rivi, sisältää 2;3;salattuSalana
 	...
-	jne
+	lopussa tyhä rivi
 ```
-Omassa ympäristössä luodaan alussa tiedosto jossa on vain 2 ensimmäistä riviä, mutta loput lisätään seuraavien ajojen aikana.  
+Omassa ympäristössä luodaan alussa tiedosto jossa on vain 2 ensimmäistä riviä (+tyhjä rivi), mutta loput lisätään seuraavien ajojen aikana.  
 Jos haluat tarkistaa onko tiedosto jo olemassa voit käyttää  
 ```.py
 import os
